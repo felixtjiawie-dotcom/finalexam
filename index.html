@@ -1,0 +1,126 @@
+<html>
+<head>
+   <title>Home</title>
+   <style>
+        img{
+		    max-width:100px;
+			max-height:50px;
+			}
+        navbar{
+		    display:flex;
+			align-items:center;
+			padding:20px;
+			}
+		nav{
+		    flex:1;
+			text-align:right;
+			}
+		nav ul{
+		    display:inline-block;
+			list-style-type:none;
+			}
+		nav ul li{
+		    display:inline-block;
+			margin-right:20px;
+			position: relative
+		}
+		nav ul li a{
+		    color:black;
+			}
+		nav ul li a:hover{
+		    background:gray;
+			color:black;
+			}
+		ul li a:hover{
+		    background:gray;
+	        color:black;
+			}
+		.Keranjang{
+            max-width:1300px;
+            padding-left:25px;
+			padding-right:25px;
+            margin:auto;
+            }
+		.Keranjang1{
+            max-width:500px;
+			max-height:1000px;
+            padding-left:100px;
+			padding-right:100px;
+            margin:auto;
+			text-align:center;
+			justify-content: center;
+			display:flex;
+            }
+		nav ul li ul.dropdown {
+            display: none;
+			position: absolute;
+			top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            min-width: 150px;
+            padding: 0;
+            list-style: none;
+            z-index: 999;
+            text-align: left;
+		}
+        nav ul li ul.dropdown li {
+		    display: block;
+            width: 100%;
+		}
+		
+		nav ul li:hover ul.dropdown {
+            display: block;
+        }
+		.gambar-kafe{
+            width: 400px;
+            height: 200px;
+            align-items: stretch;
+        }
+   </style>
+</head>
+<body>
+
+
+    
+    <div class="keranjang">
+    <div class="navbar">
+	 <div class="logo">
+	    <img src="img-removebg-preview.png">
+	 </div>
+	  <nav>
+	    <ul>
+		    <li><a href="index.html">Home</a></li>
+			<li><a href="food.html">Food</a>
+			<ul class="dropdown">
+			    <li><a href="Berat.html">Berat</a></li>
+				<li><a href="ringan.html">Ringan</a></li>
+			</ul>
+			</li>
+			<li><a href="drink.html">Drink</a>
+			<ul class="dropdown">
+			    <li><a href="mock.html">Mocktail</a></li>
+				<li><a href="cock.html">Cocktail</a></li>
+			</ul>
+			</li>
+			<li><a href="combo.html">Combo</a>
+			<ul class="dropdown">
+			    <li><a href="dberat.html">Berat and Drink</a></li>
+				<li><a href="dringan.html">Snack and Drink</a></li>
+			</ul>
+			</li>
+			<li><a href="Ayce.html">AYCE</a>
+			<ul class="dropdown">
+			    <li><a href="murah.html">Murah</a></li>
+				<li><a href="mahal.html">Mahal</a></li>
+			</ul>
+			</li>
+	  </nav>
+	</div>
+	</div>
+	<div class="Keranjang1">
+	<br><h2>Selamat Datang di Shopaid</h2></br>
+	<img src="LOOKS.jpeg" class="gambar-kafe">
+	</div>
+</body>
+</html>

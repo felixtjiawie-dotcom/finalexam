@@ -1,0 +1,267 @@
+<html>
+<head>
+   <title>murah</title>
+    <style>
+        img{
+		    max-width:100px;
+			max-height:50px;
+			}
+        navbar{
+		    display:flex;
+			align-items:center;
+			padding:20px;
+			}
+		nav{
+		    flex:1;
+			text-align:right;
+			}
+		nav ul{
+		    display:inline-block;
+			list-style-type:none;
+			}
+		nav ul li{
+		    display:inline-block;
+			margin-right:20px;
+			position: relative
+		}
+		nav ul li a{
+		    color:black;
+			}
+		nav ul li a:hover{
+		    background:gray;
+			color:black;
+			}
+		ul li a:hover{
+		    background:gray;
+	        color:black;
+			}
+		.Keranjang{
+            max-width:1300px;
+            padding-left:25px;
+			padding-right:25px;
+            margin:auto;
+            }
+		nav ul li ul.dropdown {
+            display: none;
+			position: absolute;
+			top: 100%;
+            left: 0;
+            background-color: white;
+            border: 1px solid #ccc;
+            min-width: 150px;
+            padding: 0;
+            list-style: none;
+            z-index: 999;
+            text-align: left;
+		}
+        nav ul li ul.dropdown li {
+		    display: block;
+            width: 100%;
+		}
+		
+		nav ul li:hover ul.dropdown {
+            display: block;
+        }
+		.produk-section {
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+            padding: 0 25px;
+        }
+        .section-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+        .grid-makanan {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+        .kartu-makanan {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+		.foto-makanan-kosong {
+            width: 100%;
+            height: 180px;
+            background-color: #e0e0e0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #666;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .info-makanan {
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .info-makanan h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .info-makanan p {
+            font-size: 14px;
+            color: #555;
+            margin: 0 0 15px 0;
+            flex-grow: 1;
+        }
+        .harga-beli {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .harga {
+            font-weight: bold;
+            color: #e44d26;
+            font-size: 16px;
+        }
+        .btn-beli {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .btn-beli:hover {
+            background: gray;
+        }
+   </style>
+</head>
+<body>
+
+
+    
+    <div class="keranjang">
+    <div class="navbar">
+	 <div class="logo">
+	    <img src="img-removebg-preview.png">
+	 </div>
+	  <nav>
+	    <ul>
+		    <li><a href="index.html">Home</a></li>
+			<li><a href="food.html">Food</a>
+			<ul class="dropdown">
+			    <li><a href="Berat.html">Berat</a></li>
+				<li><a href="ringan.html">Ringan</a></li>
+			</ul>
+			</li>
+			<li><a href="drink.html">Drink</a>
+			<ul class="dropdown">
+			    <li><a href="mock.html">Mocktail</a></li>
+				<li><a href="cock.html">Cocktail</a></li>
+			</ul>
+			</li>
+			<li><a href="combo.html">Combo</a>
+			<ul class="dropdown">
+			    <li><a href="dberat.html">Berat and Drink</a></li>
+				<li><a href="dringan.html">Snack and Drink</a></li>
+			</ul>
+			</li>
+			<li><a href="Ayce.html">AYCE</a>
+			<ul class="dropdown">
+			    <li><a href="murah.html">Murah</a></li>
+				<li><a href="mahal.html">Mahal</a></li>
+			</ul>
+			</li>
+	  </nav>
+	</div>
+	</div>
+	<div class="kartu-makanan">
+                <div class="foto-makanan-kosong">
+				<img src="miaceh.jpeg">
+                </div>
+                <div class="info-makanan">
+                    <h3>MIE Aceh</h3>
+                    <div class="harga-beli">
+                        <span class="harga">Rp 45.000</span>
+                        <button class="btn-beli">Beli</button>
+                    </div>
+                </div>
+            </div>
+			<div class="kartu-makanan">
+                <div class="foto-makanan-kosong">
+                   <img src="miayam.jfif">
+                </div>
+                <div class="info-makanan">
+                    <h3>MIE Ayam</h3>
+                    <div class="harga-beli">
+                        <span class="harga">Rp 45.000</span>
+                        <button class="btn-beli">Beli</button>
+                    </div>
+                </div>
+            </div>
+			<div class="kartu-makanan">
+                <div class="foto-makanan-kosong">
+                    <img src="Naspad.jfif">
+                </div>
+                <div class="info-makanan">
+                    <h3>Nasi Padang</h3>
+                    <div class="harga-beli">
+                        <span class="harga">Rp 45.000</span>
+                        <button class="btn-beli">Beli</button>
+                    </div>
+                </div>
+            </div>
+			<div class="kartu-makanan">
+                <div class="foto-makanan-kosong">
+                    <img src="plat1.jfif">
+                </div>
+                <div class="info-makanan">
+                    <h3>Mix Platter</h3>
+                    <div class="harga-beli">
+                        <span class="harga">Rp 45.000</span>
+                        <button class="btn-beli">Beli</button>
+                    </div>
+                </div>
+            </div>
+			<div class="kartu-makanan">
+                <div class="foto-makanan-kosong">
+                    <img src="sld1.jfif">
+                </div>
+                <div class="info-makanan">
+                    <h3>Salad Buah</h3>
+                    <div class="harga-beli">
+                        <span class="harga">Rp 45.000</span>
+                        <button class="btn-beli">Beli</button>
+                    </div>
+                </div>
+            </div>
+			<div class="kartu-makanan">
+                <img src="sate1.jfif">
+                </div>
+                <div class="info-makanan">
+                    <h3>Sate Premium</h3>
+                    <div class="harga-beli">
+                        <span class="harga">Rp 45.000</span>
+                        <button class="btn-beli">Beli</button>
+                    </div>
+                </div>
+            </div>
+			 <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Ambil seluruh tombol beli di halaman berat ini
+            const tombolBeli = document.querySelectorAll(".btn-beli");
+
+            // Pasang fungsi klik alert ke setiap tombol
+            tombolBeli.forEach(function (tombol) {
+                tombol.addEventListener("click", function () {
+                    alert("kamu sudah buy");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
